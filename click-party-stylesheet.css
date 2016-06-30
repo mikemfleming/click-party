@@ -1,0 +1,18 @@
+.centered{
+text-align:center;
+}
+
+.hexText{
+  font: bold 20px "Open Sans", Sans-serif;
+}
+
+.text{
+  font: bold 200px "Open Sans", Sans-serif;
+}
+
+.noHighlight{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
