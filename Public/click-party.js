@@ -5,7 +5,7 @@
 //
 
 //  On click...
-$('.target').click(runGame)
+$(document).click(runGame)
 $(document).keypress(runGame)
 
 function runGame(){
