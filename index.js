@@ -4,11 +4,10 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-//app.use(express.static(__dirname + '/Public'));
+app.use(express.static(__dirname + '/Public'));
 
 app.get('/', function(request, response) {
-	console.log("iwuerbfheuarybfauerf")
-  response.sendFile('click-party.html');
+  response.send('click-party.html');
 });
 
 app.listen(app.get('port'), function() {
