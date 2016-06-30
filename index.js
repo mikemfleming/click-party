@@ -7,7 +7,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/Public'));
 
 app.get('/', function(request, response) {
-  response.sendFile('/click-party.html');
+  response.sendFile('/Users/michaelfleming/Documents/Projects/click-party/click-party.html');
 });
 
 app.listen(app.get('port'), function() {
