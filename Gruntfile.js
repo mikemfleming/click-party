@@ -9,14 +9,14 @@ module.exports = function(grunt) {
                 src: [
                     './Public/click-party.js'
                 ],
-                dest: 'js/build/production.js',
+                dest: './Public/production.js',
             }
         },
 
         uglify: {
             build: {
-                src: 'js/build/production.js',
-                dest: 'js/build/production.min.js'
+                src: './Public/production.js',
+                dest: './Public/production.min.js'
             }
         },
 
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
               },
               dist: {
                 files: {
-                  'output.css': './Public/click-party-stylesheet.css'
+                  './Public/click-party-stylesheet.min.css': './Public/click-party-stylesheet.css'
                 }
               }
                   },
