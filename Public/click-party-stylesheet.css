@@ -1,18 +1,20 @@
-.centered{
-text-align:center;
+.container {
+	text-align:center;
+	margin-top: 20%;
 }
 
-.hexText{
+.hexText {
   font: bold 2em "Open Sans", Sans-serif;
 }
 
-.text{
+.text {
   font: bold 6em "Open Sans", Sans-serif;
 }
 
-.noHighlight{
+body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+
