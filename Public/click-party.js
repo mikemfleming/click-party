@@ -29,7 +29,7 @@ function runGame(){
 
   //  Update the hexDisplay div to have the hex name of each color
   //    Random Color : Complimentary Color
-  $('.hexDisplay').html((randomColor.toUpperCase()) + ' : ' + (compColor.toUpperCase()));
+  $('.hexDisplay').html('#' + (randomColor.toUpperCase()) + ' : ' + (compColor.toUpperCase()));
 
   //  Just a way to document the hex colros in the console. 
   console.log("This is the background hex color: " + randomColor);
