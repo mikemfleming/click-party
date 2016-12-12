@@ -1,7 +1,3 @@
-document.addEventListener('click', runGame)
-document.addEventListener('keypress', runGame)
-
-
 function runGame(){
 
   var randHex = "000000".replace(/0/g,function(){
@@ -22,3 +18,7 @@ function runGame(){
     return "#" + ( "000000".substr( 0, 6 - c.length ) + c.toUpperCase() );
   }
 }
+
+document.addEventListener('click', runGame)
+document.addEventListener('keypress', runGame)
+document.querySelector('.container').addEventListener('click', runGame)
