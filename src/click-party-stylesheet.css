@@ -13,11 +13,20 @@ body {
   color: var(--compColor);
 }
 
-.container {
+#container {
 	text-align:center;
 	margin-top: 20%;
 }
 
 .hexText {
   font-size: 3rem;
+}
+
+#history {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  word-break: break-all;
 }
