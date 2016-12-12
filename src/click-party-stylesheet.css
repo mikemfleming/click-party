@@ -9,11 +9,15 @@ body {
   -ms-user-select: none;
   user-select: none;
   font: bold 6em "Open Sans", Sans-serif;
-  background: var(--randomColor);
+  background-color: var(--randomColor);
   color: var(--compColor);
 }
 
 .container {
 	text-align:center;
 	margin-top: 20%;
+}
+
+.hexText {
+  font-size: 3rem;
 }

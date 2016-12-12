@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
         dist: {
           src: [
-              './Public/click-party.js'
+              './src/click-party.js'
           ],
           dest: './production/production.js',
         }
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 
         dist: {
           files: {
-            './production/click-party-stylesheet.min.css': './Public/click-party-stylesheet.css'
+            './production/click-party-stylesheet.min.css': './src/click-party-stylesheet.css'
           }
         }
 
@@ -40,13 +40,13 @@ module.exports = function(grunt) {
       watch: {
 
         css: {
-          files: ['./Public/*.css'],
+          files: ['./src/*.css'],
           tasks: ['cssmin']
         },
 
         js: {
-          files: ['./Public/*.js'],
-          tasks: ['uglify']
+          files: ['./src/*.js'],
+          tasks: ['concat', 'uglify']
         }
 
       },
