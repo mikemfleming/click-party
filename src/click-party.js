@@ -21,4 +21,4 @@ function runGame(){
 
 document.addEventListener('click', runGame)
 document.addEventListener('keypress', runGame)
-document.querySelector('.container').addEventListener('click', runGame)
+document.querySelector('.container').addEventListener('click', runGame) // helps with mobile
