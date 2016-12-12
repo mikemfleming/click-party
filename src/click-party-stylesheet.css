@@ -1,0 +1,19 @@
+:root {
+	randomColor: white;
+	compColor: black;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font: bold 6em "Open Sans", Sans-serif;
+  background: var(--randomColor);
+  color: var(--compColor);
+}
+
+.container {
+	text-align:center;
+	margin-top: 20%;
+}

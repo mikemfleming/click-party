@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           src: [
               './Public/click-party.js'
           ],
-          dest: './Public/production.js',
+          dest: './production/production.js',
         }
 
       },
@@ -17,8 +17,8 @@ module.exports = function(grunt) {
       uglify: {
 
         build: {
-          src: './Public/production.js',
-          dest: './Public/production.min.js'
+          src: './production/production.js',
+          dest: './production/production.min.js'
         }
 
       },
@@ -31,21 +31,24 @@ module.exports = function(grunt) {
 
         dist: {
           files: {
-            './Public/click-party-stylesheet.min.css': './Public/click-party-stylesheet.css'
+            './production/click-party-stylesheet.min.css': './Public/click-party-stylesheet.css'
           }
         }
-        
+
       },
 
       watch: {
+
         css: {
           files: ['./Public/*.css'],
           tasks: ['cssmin']
         },
+
         js: {
           files: ['./Public/*.js'],
-          tasks: ['concat', 'uglify']
+          tasks: ['uglify']
         }
+
       },
   });
 
